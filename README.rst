@@ -4,14 +4,22 @@
 .. image:: https://coveralls.io/repos/inducer/relate/badge.svg
    :target: https://coveralls.io/r/inducer/relate
 
-RELATE
-======
+THEME FOR RELATE
+================
 
-Relate is an Environment for Learning And TEaching
+Theme for Relate is an Environment for Learning And TEaching
 
-+----------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+
-| .. image:: https://raw.githubusercontent.com/inducer/relate/master/doc/images/screenshot.png | .. image:: https://raw.githubusercontent.com/inducer/relate/master/doc/images/screenshot-2.png |
-+----------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+
+.. image:: https://i.imgur.com/PMsz4TU.png 
+
+.. image:: https://i.imgur.com/JeWQNva.png
+
+.. image:: https://i.imgur.com/z1MvGNk.png
+
+.. image:: https://i.imgur.com/fvqeRno.png
+
+.. image:: https://i.imgur.com/fvqeRno.png
+
+
 
 RELATE is a web-based courseware package.  It is set apart by the following
 features:
