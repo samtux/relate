@@ -8,19 +8,6 @@
   {% trans "RELATE" %}
 {% endblock %}
 
-{% block brand %}
-  {{ course.number}}
-  {{ course.time_period}}
-{% endblock %}
-
-{% block brand_link %}
-  {% if not relate_exam_lockdown %}
-    {% url "relate-course_page" course.identifier %}
-  {% else %}
-    #
-  {% endif %}
-{% endblock %}
-
 {% block navbar %}
   {% block page_navbar %}
   {% endblock %}
@@ -190,4 +177,17 @@
       {% endif %}
     </div>
   {% endif %}
+{% endblock %}
+
+{% block section %}
+<section class="headline-sec">
+    <div class="overlay ">
+      {% if not relate_exam_lockdown %}
+      <h3 ><a href='{% url "relate-course_page" course.identifier %}' class='link-course'>{{ course.number}}{{ course.time_period}}</a>
+      {% else %}
+      <h3 >{{ course.number}}{{ course.time_period}}
+      {% endif %}
+    </h3>
+    </div>
+</section>
 {% endblock %}

@@ -1,8 +1,17 @@
 {% extends "base.html" %}
 {% load i18n %}
 
+
+{% block section %}
+<section class="headline-sec">
+    <div class="overlay ">
+        <h3 >{% trans "Sign in to RELATE" %}</h3>
+
+    </div>
+</section>
+{% endblock %}
+
 {% block content %}
-  <h1>{% trans "Sign in to RELATE" %}</h1>
 
   <ul class="list-sign-in-methods">
     {% if relate_sign_in_by_saml2_enabled %}

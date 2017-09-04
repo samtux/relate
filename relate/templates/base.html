@@ -12,7 +12,10 @@
 
     <link href="{% static "bootstrap/dist/css/bootstrap.css" %}" rel="stylesheet">
     <link href="{% static "jquery-ui/themes/smoothness/jquery-ui.css" %}" rel="stylesheet">
-
+    <!-- Init Theme relate -->
+    <link href="{% static "theme/it-host/css/style.css" %}" rel="stylesheet">
+    <link href="{% static "theme/it-host/css/font-awesome.css" %}" rel="stylesheet">
+    <!-- End Theme relate -->
     <link rel="stylesheet" href="{% static "font-awesome/css/font-awesome.css" %}">
     <link rel="stylesheet" href="{% static "jstree/dist/themes/default/style.min.css" %}" />
     <link rel="stylesheet" href="/static/css/style.css" >
@@ -44,7 +47,7 @@
   <body>
 
     <!-- Fixed navbar -->
-    <div class="navbar navbar-default" role="navigation">
+    <div class="navbar navbar-inverse navbar-fixed-top " >
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -124,23 +127,76 @@
       </div>
     </div>
 
+    {% block section %}
+    {% endblock %}
+
     {% block root_container %}
-    <div class="container">
-      {% include "base-page-top.html" %}
 
-      {% block nav_recommendations %}
-      {% endblock %}
+    {% block course %}
+    {% endblock %}
 
-      {% block content %}
-      {% endblock %}
+    <section>
+      <div class="container container-body">
+        {% include "base-page-top.html" %}
 
-    </div>
+        {% block nav_recommendations %}
+        {% endblock %}
+
+        {% block content %}
+        {% endblock %}
+
+      </div>
+    </section>
     {% endblock %}
 
     {% block page_bottom_javascript_extra %}{% endblock %}
     <!-- JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+
+    <!--FOOTER SECTION INIT-->
+    <section id="footer-sec" >
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h4>{% trans "RELATE" %}</h4>
+            <p style="padding-right:50px;">
+              {% trans "RELATE is an Environment for Learning And TEaching" %}.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h4>Location</h4>
+            <h5>City</h5>
+            <h5>Country</h5>
+
+          </div>
+          <div class="col-md-4">
+            <h4>Follow me on</h4>
+            <div class="social-links">
+
+              <a href="https://twitter.com/#" > <i class="fa fa-twitter fa-2x" ></i></a>
+              <a href="https://www.linkedin.com/#" > <i class="fa fa-linkedin fa-2x" ></i></a>
+              <a href="https://plus.google.com/#" > <i class="fa fa-google-plus fa-2x" ></i></a>
+              <a href="https://github.com/#" > <i class="fa fa-github fa-2x" ></i></a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <!--FOOTER SECTION END-->
+    <div class="copy-txt">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 set-foot" >
+            <i class="fa fa-copyright fa-flip-horizontal"></i> 2017 {% trans "RELATE" %} | Development using: <a href="https://github.com/inducer/relate" target="_blank" style="color:#7C7C7C;">relate</a> | Design by: <a href="http://www.binarytheme.com" target="_blank" style="color:#7C7C7C;">binarytheme.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script type="text/javascript"
       src="{% static "MathJax/MathJax.js" %}?config=TeX-AMS-MML_HTMLorMML">
     </script>

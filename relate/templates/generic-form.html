@@ -3,10 +3,17 @@
 
 {% load crispy_forms_tags %}
 
+{% block section %}
+<section class="headline-sec">
+    <div class="overlay ">
+      {% if form_description %}
+        <h3>{{ form_description }}</h3>
+      {% endif %}
+    </div>
+</section>
+{% endblock %}
+
 {% block content %}
-  {% if form_description %}
-    <h1>{{ form_description }}</h1>
-  {% endif %}
   {{ form_text|safe }}
   <div class="well">
     {% crispy form %}

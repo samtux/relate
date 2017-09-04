@@ -3,8 +3,16 @@
 
 {% load crispy_forms_tags %}
 
+{% block section %}
+<section class="headline-sec">
+    <div class="overlay ">
+        <h3 >{% trans "Check in for Exam" %}</h3>
+
+    </div>
+</section>
+{% endblock %}
+
 {% block content %}
-  <h1>{% trans "Check in for Exam" %}</h1>
 
   <div class="alert alert-info">
     <i class="fa fa-chevron-left"></i>

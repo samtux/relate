@@ -3,8 +3,15 @@
 
 {% load crispy_forms_tags %}
 
+{% block section %}
+<section class="headline-sec">
+    <div class="overlay ">
+        <h3 >{% trans "User Profile" %}</h3>
+    </div>
+</section>
+{% endblock %}
+
 {% block content %}
-  <h1>{% trans "User Profile" %}</h1>
   <div class="well">
     {% crispy user_form %}
   </div>
