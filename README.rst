@@ -17,10 +17,8 @@ Theme for Relate is an Environment for Learning And TEaching
 
 .. image:: https://i.imgur.com/fvqeRno.png
 
-.. image:: https://i.imgur.com/fvqeRno.png
 
-
-Live Demo:  [http://www.aulageo.cloud](http://www.aulageo.cloud)
+Live Demo:  http://www.aulageo.cloud
 
 
 RELATE is a web-based courseware package.  It is set apart by the following
